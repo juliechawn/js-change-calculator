@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Change Calculator</title>
+    <meta charset="utf-8">
+    <meta name"viewpoint" content="width=device-width, initial-scale=.1 shrink-to-fi=tno">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container text-center mt-5">
+      <h1 class="display-4">Change Calculator</h1>
+    </div>
+
+    <!-- Inputs -->
+    <div class="container text-center input-group input-group-lg mt-3" id="input">
+        <span class="input-group-addon" id="sizing-addon1">$</span>
+        <input id="amount-due" type="text" class="form-control" placeholder="How much is due for the sale?" aria-label="Username" aria-describedby="sizing-addon1">
+    </div>    
+        <br/>
+    <div class="container text-center input-group input-group-lg" id="input">
+        <span class="input-group-addon" id="sizing-addon1">$</span>
+        <input id="amount-received" type="text" class="form-control" placeholder="How much has the customer given you?" aria-label="Username" aria-describedby="sizing-addon1">
+    </div> <br />
+    <div class="container text-center">
+        <button type="button" class="btn btn-primary btn-lg btn-lg" onclick="eventClickHandle()" id="calculate-change">Calculate Change!</button> <br />
+    </div>
+
+    <!-- Outputs -->
+    <div class="container text-center my-4" id="result"> 
+        <p id="result">Change Amount!</p>
+      </div>
+      <div class="container text-center my-4" id="bills">
+        <h2>Bills</h2>
+      </div>
+      <div class="container text-center my-2">   
+        <p id="dollars-output">$0</p>
+        <p>Dollars</p>
+      </div>
+      <div class="container text-center my-4">
+        <h2>Coins</h2>
+      </div>
+      <div class="container text-center my-2"> 
+        <div class="row">
+          <div class="col">
+             <p id="quarters-output">0</p>
+             <p>Quarters</p>
+          </div>
+          <div class="col">
+            <p id="dimes-output">0</p>
+            <p>Dimes</p>
+          </div>
+          <div class="col">
+              <p id="nickels-output">0</p>
+              <p>Nickles</p>
+          </div>
+          <div class="col">
+              <p id="pennies-output">0</p>
+              <p>Pennies</p>
+          </div>
+        </div>
+      <link rel="stylesheet" href="style.css" />
+      <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
